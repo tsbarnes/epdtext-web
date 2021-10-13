@@ -2,6 +2,9 @@ import logging
 import posix_ipc
 from flask import Flask, render_template, flash, redirect, request
 
+from system import System
+
+
 app = Flask(__name__)
 app.config.from_pyfile("app.cfg")
 try:
@@ -14,7 +17,7 @@ except posix_ipc.PermissionsError:
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', system=System)
 
 
 @app.route('/next_screen')

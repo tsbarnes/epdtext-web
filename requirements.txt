@@ -1,0 +1,4 @@
+Flask~=2.0.2
+DateTime~=4.3
+distro~=1.6.0
+psutil~=5.8.0

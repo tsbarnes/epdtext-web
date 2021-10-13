@@ -72,4 +72,21 @@
         </div>
         <div class="col-lg-4 col-md-3 col-sm-1"></div>
     </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-3 col-sm-1"></div>
+        <div class="col-lg-4 col-md-6 col-sm-10">
+            <h1>System Info</h1>
+            <table>
+                <tr>
+                    <td>OS:</td>
+                    <td>{{ system.dist() }}</td>
+                </tr>
+                <tr>
+                    <td>Model:</td>
+                    <td>{{ system.model() }}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-4 col-md-3 col-sm-1"></div>
+    </div>
 {% endblock %}
