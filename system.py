@@ -3,6 +3,7 @@ import logging
 import platform
 import time
 
+import humanize
 import distro
 import psutil
 
@@ -34,7 +35,7 @@ class System:
 
     @staticmethod
     def temperature():
-        return psutil.sensors_temperatures()
+        return round(psutil.sensors_temperatures()['cpu_thermal'][0].current)
 
     @staticmethod
     def model():
@@ -63,7 +64,7 @@ class System:
 
     @staticmethod
     def uptime():
-        return datetime.timedelta(seconds=time.clock_gettime(time.CLOCK_BOOTTIME))
+        return humanize.naturaldelta(datetime.timedelta(seconds=time.clock_gettime(time.CLOCK_BOOTTIME)))
 
     @staticmethod
     def network_total_sent():

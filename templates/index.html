@@ -87,7 +87,23 @@
                 </tr>
                 <tr>
                     <td>Temperature:</td>
-                    <td>{{ system.temperature() }}</td>
+                    <td>{{ system.temperature() }}°</td>
+                </tr>
+                <tr>
+                    <td>Network Sent:</td>
+                    <td>{{ system.network_total_sent() }}</td>
+                </tr>
+                <tr>
+                    <td>Network Received:</td>
+                    <td>{{ system.network_total_received() }}</td>
+                </tr>
+                <tr>
+                    <td>Hostname:</td>
+                    <td>{{ system.node() }}</td>
+                </tr>
+                <tr>
+                    <td>Local IPv4 Address:</td>
+                    <td>{{ system.local_ipv4_address() }}</td>
                 </tr>
                 <tr>
                     <td>Uptime:</td>
