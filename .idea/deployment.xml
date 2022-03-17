@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="alarm@melpomene.local:22" remoteFilesAllowedToDisappearOnAutoupload="false" autoUploadExternalChanges="true">
-    <serverData>
-      <paths name="alarm@melpomene.local:22">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/tmp/pycharm_project_100" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="pi@oghma.local:22">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/tmp/pycharm_project_873" local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </paths>
-    </serverData>
+  <component name="PublishConfigData" autoUpload="Always" serverName="pi@melpomene.local:22" remoteFilesAllowedToDisappearOnAutoupload="false" autoUploadExternalChanges="true">
     <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
